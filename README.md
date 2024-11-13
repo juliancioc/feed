@@ -27,7 +27,7 @@ Projeto criado com a finalidade de atender a um desafio técnico.
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/juliancioc/feed.git
    cd nome-do-repositorio
    ```
 
