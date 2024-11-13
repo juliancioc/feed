@@ -7,7 +7,7 @@ import axiosInstance from "src/services/api";
 import { PostProps } from "../home";
 import { Post } from "src/components/post";
 
-export const UserPosts = () => {
+const UserPosts = () => {
   const { id } = useParams();
 
   const [posts, setPosts] = useState<PostProps[]>([]);
@@ -40,3 +40,5 @@ export const UserPosts = () => {
     </>
   );
 };
+
+export default UserPosts;

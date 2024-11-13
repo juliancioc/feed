@@ -12,7 +12,7 @@ export type PostProps = {
   userId: number;
 };
 
-export const Home = () => {
+const Home = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -43,3 +43,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

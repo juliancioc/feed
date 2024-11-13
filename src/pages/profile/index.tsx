@@ -22,7 +22,7 @@ type ProfileProps = {
   };
 };
 
-export const Profile = () => {
+const Profile = () => {
   const {
     register,
     handleSubmit,
@@ -185,3 +185,5 @@ export const Profile = () => {
     </>
   );
 };
+
+export default Profile;

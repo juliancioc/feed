@@ -22,7 +22,7 @@ import { Field } from "src/components/ui/field";
 import generateId from "src/utils/generateId";
 import { PostProps } from "../home";
 
-export const MyPosts = () => {
+const MyPosts = () => {
   const [posts, setPosts] = useState<PostProps[]>([]);
 
   const {
@@ -177,3 +177,5 @@ export const MyPosts = () => {
     </>
   );
 };
+
+export default MyPosts
