@@ -66,9 +66,7 @@ export const Post: FC<{ post: PostProps }> = ({ post }) => {
 
         <Card.Title>{title}</Card.Title>
 
-        <Card.Description>
-          <Text textStyle="md">{body}</Text>
-        </Card.Description>
+        <Card.Description fontSize="16px">{body}</Card.Description>
 
         <Card.Footer>
           <HStack mt={4}>

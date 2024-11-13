@@ -35,8 +35,8 @@ export const Home = () => {
             Feed
           </Text>
 
-          {posts.map((post) => (
-            <Post post={post} />
+          {posts.map((post: PostProps) => (
+            <Post post={post} key={post.id} />
           ))}
         </Stack>
       </Container>

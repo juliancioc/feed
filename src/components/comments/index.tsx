@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Card, Editable, HStack, Stack, IconButton } from "@chakra-ui/react";
+import { Card, HStack, Stack, IconButton, Editable } from "@chakra-ui/react";
 import { LuCheck, LuPencilLine, LuX } from "react-icons/lu";
 import { MdDelete } from "react-icons/md";
 
@@ -32,23 +32,23 @@ export const Comments: FC<{
           <Card.Body>
             <User userId={2} />
 
-            <Card.Description>
+            <Card.Description asChild>
               <Editable.Root defaultValue={comment.body}>
                 <Editable.Preview />
-                <Editable.Textarea />
+                <Editable.Textarea/>
 
                 <Editable.Control>
-                  <Editable.EditTrigger>
+                  <Editable.EditTrigger asChild>
                     <IconButton variant="ghost" size="xs">
                       <LuPencilLine />
                     </IconButton>
                   </Editable.EditTrigger>
-                  <Editable.CancelTrigger>
+                  <Editable.CancelTrigger asChild>
                     <IconButton variant="outline" size="xs">
                       <LuX />
                     </IconButton>
                   </Editable.CancelTrigger>
-                  <Editable.SubmitTrigger>
+                  <Editable.SubmitTrigger asChild>
                     <IconButton variant="outline" size="xs">
                       <LuCheck />
                     </IconButton>
