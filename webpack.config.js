@@ -6,7 +6,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    publicPath: './'
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.png'],
@@ -36,5 +36,6 @@ module.exports = {
     static: './dist',
     historyApiFallback: true,
     port: 3000
-  }
+  },
+  mode: 'production'
 };
