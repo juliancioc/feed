@@ -37,7 +37,7 @@ const UserPosts = () => {
           </Text>
 
           {posts.map((post) => (
-            <Post post={post} />
+            <Post post={post} key={post.id}/>
           ))}
         </Stack>
       </Container>
