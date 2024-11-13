@@ -17,9 +17,13 @@ const UserPosts = () => {
   }, [id]);
 
   const getPosts = async () => {
-    const { data } = await axiosInstance.get(`/posts?userId=${id}`);
+    try {
+      const { data } = await axiosInstance.get(`/posts?userId=${id}`);
 
-    setPosts(data);
+      setPosts(data);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

@@ -37,9 +37,13 @@ const MyPosts = () => {
   }, []);
 
   const getPosts = async () => {
-    const { data } = await axiosInstance.get(`/posts?userId=1`);
+    try {
+      const { data } = await axiosInstance.get(`/posts?userId=1`);
 
-    setPosts(data);
+      setPosts(data);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const handleRemovepost = (postId: number) => {
