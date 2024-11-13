@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 
 import { Header } from "src/components/header";
 import { Post } from "src/components/post";
-import { Alert } from "src/components/ui/alert";
 import axiosInstance from "src/services/api";
 
 export type PostProps = {
