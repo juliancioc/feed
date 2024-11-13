@@ -11,3 +11,11 @@ global.matchMedia = jest.fn().mockImplementation(() => ({
   addListener: jest.fn(),
   removeListener: jest.fn(),
 }));
+
+beforeAll(() => {
+  jest.spyOn(console, 'warn').mockImplementation(() => {});
+});
+
+afterAll(() => {
+  console.warn.mockRestore();
+});

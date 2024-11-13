@@ -10,7 +10,7 @@ module.exports = {
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
   setupFilesAfterEnv: ['<rootDir>/config/jest.setup.js'],
-  collectCoverage: false,
+  collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts'],
   coverageReporters: ['text', 'lcov', 'json'],
   coverageDirectory: '<rootDir>/coverage',

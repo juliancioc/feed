@@ -120,52 +120,54 @@ export const MyPosts = () => {
               <Card.Body>
                 <User userId={2} />
 
-                <Card.Description>
-                  <Editable.Root defaultValue={post.title}>
-                    <Editable.Preview />
-                    <Editable.Textarea />
+                <Card.Description asChild>
+                  <Container>
+                    <Editable.Root defaultValue={post.title}>
+                      <Editable.Preview />
+                      <Editable.Textarea />
 
-                    <Editable.Control>
-                      <Editable.EditTrigger>
-                        <IconButton variant="ghost" size="xs">
-                          <LuPencilLine />
-                        </IconButton>
-                      </Editable.EditTrigger>
-                      <Editable.CancelTrigger>
-                        <IconButton variant="outline" size="xs">
-                          <LuX />
-                        </IconButton>
-                      </Editable.CancelTrigger>
-                      <Editable.SubmitTrigger>
-                        <IconButton variant="outline" size="xs">
-                          <LuCheck />
-                        </IconButton>
-                      </Editable.SubmitTrigger>
-                    </Editable.Control>
-                  </Editable.Root>
+                      <Editable.Control>
+                        <Editable.EditTrigger asChild>
+                          <IconButton variant="ghost" size="xs">
+                            <LuPencilLine />
+                          </IconButton>
+                        </Editable.EditTrigger>
+                        <Editable.CancelTrigger asChild>
+                          <IconButton variant="outline" size="xs">
+                            <LuX />
+                          </IconButton>
+                        </Editable.CancelTrigger>
+                        <Editable.SubmitTrigger asChild>
+                          <IconButton variant="outline" size="xs">
+                            <LuCheck />
+                          </IconButton>
+                        </Editable.SubmitTrigger>
+                      </Editable.Control>
+                    </Editable.Root>
 
-                  <Editable.Root defaultValue={post.body}>
-                    <Editable.Preview />
-                    <Editable.Textarea />
+                    <Editable.Root defaultValue={post.body}>
+                      <Editable.Preview />
+                      <Editable.Textarea />
 
-                    <Editable.Control>
-                      <Editable.EditTrigger>
-                        <IconButton variant="ghost" size="xs">
-                          <LuPencilLine />
-                        </IconButton>
-                      </Editable.EditTrigger>
-                      <Editable.CancelTrigger>
-                        <IconButton variant="outline" size="xs">
-                          <LuX />
-                        </IconButton>
-                      </Editable.CancelTrigger>
-                      <Editable.SubmitTrigger>
-                        <IconButton variant="outline" size="xs">
-                          <LuCheck />
-                        </IconButton>
-                      </Editable.SubmitTrigger>
-                    </Editable.Control>
-                  </Editable.Root>
+                      <Editable.Control>
+                        <Editable.EditTrigger asChild>
+                          <IconButton variant="ghost" size="xs">
+                            <LuPencilLine />
+                          </IconButton>
+                        </Editable.EditTrigger>
+                        <Editable.CancelTrigger asChild>
+                          <IconButton variant="outline" size="xs">
+                            <LuX />
+                          </IconButton>
+                        </Editable.CancelTrigger>
+                        <Editable.SubmitTrigger asChild>
+                          <IconButton variant="outline" size="xs">
+                            <LuCheck />
+                          </IconButton>
+                        </Editable.SubmitTrigger>
+                      </Editable.Control>
+                    </Editable.Root>
+                  </Container>
                 </Card.Description>
               </Card.Body>
             </Card.Root>
