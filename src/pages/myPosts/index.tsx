@@ -83,6 +83,7 @@ const MyPosts = () => {
                 >
                   <Input
                     {...register("title", { required: "Título é obrigatório" })}
+                    data-testid="input-title-new-post"
                   />
                 </Field>
 
@@ -95,6 +96,7 @@ const MyPosts = () => {
                     {...register("body", {
                       required: "Descrição é obrigatório",
                     })}
+                    data-testid="input-description-new-post"
                   />
                 </Field>
 
@@ -178,4 +180,4 @@ const MyPosts = () => {
   );
 };
 
-export default MyPosts
+export default MyPosts;

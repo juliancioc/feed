@@ -87,7 +87,7 @@ export const Post: FC<{ post: PostProps }> = ({ post }) => {
               value={comment}
               onChange={(e) => setComment(e.target.value)}
             />
-            <IconButton type="submit" variant="outline" ml={2}>
+            <IconButton type="submit" variant="outline" ml={2} data-testid="btn-add-new-comment">
               <IoSend />
             </IconButton>
           </form>

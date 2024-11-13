@@ -39,7 +39,7 @@ export const User: FC<{ userId: number }> = ({ userId }) => {
           <Link to={`/user/${user.id}`}>{user.name}</Link>
         </Text>
         <Text color="fg.muted" textStyle="sm">
-          @{user.username.toLowerCase()}
+          @{user?.username?.toLowerCase()}
         </Text>
       </Stack>
     </HStack>
