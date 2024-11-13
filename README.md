@@ -28,7 +28,7 @@ Projeto criado com a finalidade de atender a um desafio técnico.
 
    ```bash
    git clone https://github.com/juliancioc/feed.git
-   cd nome-do-repositorio
+   cd feed
    ```
 
 2. Instale as dependências:
