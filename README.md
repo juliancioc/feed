@@ -1,7 +1,3 @@
-# Feed
-
-Projeto criado com a finalidade de atender a um desafio técnico.
-
 ## Índice
 
 - [Funcionalidades](#funcionalidades)
